@@ -1,9 +1,7 @@
-const express = require('express')
-const app = express()
-const port = 3000
+var express = require('express')
+var app = express()
+var port = 3000
 
-app.get('/api', function (req, res) {
-    res.json({
-        message: 'Hello World!!'
-    })
+app.get('/', function (req, res) {
+    res.send('Hello World!!')
   })
